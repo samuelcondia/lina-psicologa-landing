@@ -6,8 +6,9 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 bg-crema shadow-[0_1px_0_rgba(22,33,68,0.08)]">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#" className="font-serif-title text-xl text-marino">
-          {site.nombre}
+        <a href="#" className="font-serif-title text-xl leading-tight text-marino">
+          Lina María <br className="md:hidden" />
+          Sánchez Uribe
         </a>
         <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
