@@ -50,16 +50,26 @@ export function MediaSpotlight() {
               Libros digitales para seguir explorando el camino de sanar e
               integrar, a tu ritmo.
             </p>
-            <div className="mt-5 flex gap-5 overflow-x-auto pb-2">
+            <div className="mt-8 flex gap-8 overflow-x-auto px-2 pt-2 pb-4">
               {libros.map((libro) => (
-                <div key={libro.titulo} className="shrink-0">
-                  <div className="flex aspect-[2/3] w-32 flex-col items-center justify-center gap-3 rounded-xl bg-gradient-to-br from-marino via-marino to-marino-suave text-crema shadow-lg shadow-marino/20 md:w-36">
-                    <BookOpen className="h-8 w-8 text-malva" strokeWidth={1.5} />
-                    <span className="font-serif-title text-lg">
-                      {libro.titulo}
-                    </span>
+                <div key={libro.titulo} className="group shrink-0">
+                  <div className="relative h-44 w-32 -rotate-3 transition-transform duration-300 group-hover:rotate-0 md:h-52 md:w-36">
+                    <div className="absolute inset-0 translate-x-1.5 translate-y-1.5 rounded-md bg-marino-suave/50" />
+                    <div className="absolute inset-0 translate-x-0.5 translate-y-0.5 rounded-md bg-marino-suave/70" />
+                    <div className="relative flex h-full w-full flex-col justify-between rounded-md bg-gradient-to-br from-marino to-marino-suave p-3 text-crema shadow-xl ring-1 ring-black/10">
+                      <BookOpen className="h-5 w-5 text-malva" strokeWidth={1.5} />
+                      <div>
+                        <p className="font-serif-title text-sm leading-tight">
+                          {libro.titulo}
+                        </p>
+                        <div className="mt-2 h-px w-8 bg-malva/60" />
+                        <p className="mt-2 text-[9px] tracking-wide text-crema/50 uppercase">
+                          Lina Sánchez Uribe
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <p className="mt-2 text-center text-xs text-marino/50">
+                  <p className="mt-3 text-center text-xs text-marino/50">
                     Próximamente
                   </p>
                 </div>

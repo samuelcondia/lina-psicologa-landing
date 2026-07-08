@@ -19,11 +19,10 @@ export const site = {
   videoDestacadoId: "xSJ3jx0PcPA",
 };
 
-// Placeholders de mockup mientras Lina define títulos, portadas y links de compra reales.
+// Mockup de portada mientras Lina pasa el diseño/arte real y el link de compra.
 export const libros = [
-  { titulo: "Libro 1" },
-  { titulo: "Libro 2" },
-  { titulo: "Libro 3" },
+  { titulo: "Manual de Soberanía Energética" },
+  { titulo: "Mujer en deconstrucción" },
 ];
 
 export const stats = [
