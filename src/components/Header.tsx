@@ -1,6 +1,6 @@
 import { navLinks, site } from "@/lib/content";
 import { WhatsAppButton } from "./WhatsAppButton";
-import { InstagramIcon, LinkedInIcon } from "./icons";
+import { InstagramIcon, LinkedInIcon, YoutubeIcon } from "./icons";
 
 export function Header() {
   return (
@@ -40,6 +40,15 @@ export function Header() {
               className="flex h-9 w-9 items-center justify-center rounded-full border border-marino/20 text-marino transition-colors hover:bg-marino hover:text-crema"
             >
               <InstagramIcon className="h-4 w-4" />
+            </a>
+            <a
+              href={site.youtubeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-marino/20 text-marino transition-colors hover:bg-marino hover:text-crema"
+            >
+              <YoutubeIcon className="h-4 w-4" />
             </a>
           </div>
           <WhatsAppButton className="px-4 py-2 text-sm">Escríbeme</WhatsAppButton>

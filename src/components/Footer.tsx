@@ -16,7 +16,17 @@ export function Footer() {
               Escríbeme por WhatsApp y con gusto te cuento cómo trabajamos y
               agendamos tu primera sesión.
             </p>
-            <WhatsAppButton className="mt-6" />
+            <div className="mt-6 flex flex-wrap items-center gap-4">
+              <WhatsAppButton />
+              <a
+                href={site.doctoraliaUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-marino underline underline-offset-4 hover:text-malva"
+              >
+                O agenda por Doctoralia
+              </a>
+            </div>
           </div>
           <div className="space-y-3 text-sm text-marino/70 md:text-right">
             <p className="flex items-center gap-2 md:justify-end">

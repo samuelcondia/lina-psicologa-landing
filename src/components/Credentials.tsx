@@ -3,7 +3,7 @@ import { Award, Brain, GraduationCap, HeartHandshake, Wind } from "lucide-react"
 const credenciales = [
   { icono: GraduationCap, etiqueta: "U. San Buenaventura" },
   { icono: Brain, etiqueta: "Psicología Junguiana" },
-  { icono: Wind, etiqueta: "Mindfulness · MBSR" },
+  { icono: Wind, etiqueta: "Mindfulness" },
   { icono: HeartHandshake, etiqueta: "Pareja Consciente" },
   { icono: Award, etiqueta: "20 años de trayectoria" },
 ];

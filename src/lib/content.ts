@@ -3,7 +3,7 @@
 export const site = {
   nombre: "Lina María Sánchez Uribe",
   titulo: "Psicóloga Holística",
-  ubicacion: "Cra. 16 Bis No. 10-65, Los Álamos, Edificio PlazaU · Pereira",
+  ubicacion: "Edificio Plaza U, Cra. 27 #11-53, Los Álamos · Pereira",
   instagram: "@lina_sanchez_terapia_holistica",
   instagramUrl: "https://www.instagram.com/lina_sanchez_terapia_holistica/",
   // TODO: pedirle a Lina su enlace de LinkedIn y reemplazar este placeholder.
@@ -12,6 +12,10 @@ export const site = {
   whatsapp: "573113405948",
   whatsappMensaje:
     "Hola Lina, vi tu página y me gustaría agendar una sesión.",
+  doctoraliaUrl:
+    "https://www.doctoralia.co/lina-maria-sanchez-uribe/psicologo/pereira",
+  // TODO: pedirle a Lina el link de su canal de YouTube para enlazarlo.
+  youtubeUrl: "#",
 };
 
 export const stats = [
@@ -23,7 +27,7 @@ export const stats = [
 export const sobreMi = {
   parrafos: [
     "Soy psicóloga clínica graduada de la Universidad San Buenaventura de Medellín, con 20 años acompañando procesos de sanación desde una mirada integrativa: mente, cuerpo y espíritu.",
-    "Mi enfoque combina la psicología junguiana con prácticas de mindfulness (formación MBSR en curso) y herramientas contemplativas, además de educación en salud sexual y reproductiva con perspectiva de género.",
+    "Mi enfoque combina la psicología junguiana con prácticas de mindfulness y herramientas contemplativas, además de educación en salud sexual y reproductiva con perspectiva de género.",
     "Creo en un acompañamiento cercano y sin juicios, que te ayude a integrar lo que sientes y a construir una vida más consciente y equilibrada.",
   ],
 };

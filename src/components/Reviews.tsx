@@ -1,5 +1,5 @@
 import { Quote, Star } from "lucide-react";
-import { resenas } from "@/lib/content";
+import { resenas, site } from "@/lib/content";
 
 export function Reviews() {
   return (
@@ -17,7 +17,7 @@ export function Reviews() {
           <p className="mt-2 text-sm text-crema/60">
             Reseñas reales de pacientes en{" "}
             <a
-              href="https://www.doctoralia.co/lina-maria-sanchez-uribe/psicologo/pereira"
+              href={site.doctoraliaUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="underline underline-offset-4 hover:text-malva"

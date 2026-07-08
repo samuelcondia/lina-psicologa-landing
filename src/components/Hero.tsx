@@ -25,8 +25,8 @@ export function Hero() {
             </h1>
             <p className="mt-4 max-w-md text-marino/70">
               Acompañamiento psicológico holístico, presencial en Pereira o
-              virtual desde cualquier lugar, para mujeres que buscan una vida
-              más consciente y equilibrada.
+              virtual desde cualquier lugar, para quienes buscan una vida más
+              consciente y equilibrada.
             </p>
             <div className="mt-6">
               <WhatsAppButton />
