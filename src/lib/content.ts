@@ -15,7 +15,16 @@ export const site = {
   doctoraliaUrl:
     "https://www.doctoralia.co/lina-maria-sanchez-uribe/psicologo/pereira",
   youtubeUrl: "https://www.youtube.com/@LinaSanchezTerapiaHolistica",
+  // Video destacado en la franja de YouTube/libros (meditación "Sanar e Integrar" - chakra sacro).
+  videoDestacadoId: "xSJ3jx0PcPA",
 };
+
+// Placeholders de mockup mientras Lina define títulos, portadas y links de compra reales.
+export const libros = [
+  { titulo: "Libro 1" },
+  { titulo: "Libro 2" },
+  { titulo: "Libro 3" },
+];
 
 export const stats = [
   { valor: "20+", etiqueta: "Años de experiencia" },

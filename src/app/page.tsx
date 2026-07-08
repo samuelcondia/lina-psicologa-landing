@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { MediaSpotlight } from "@/components/MediaSpotlight";
 import { Hero } from "@/components/Hero";
 import { Credentials } from "@/components/Credentials";
 import { AboutMe } from "@/components/AboutMe";
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <Header />
       <main>
+        <MediaSpotlight />
         <Hero />
         <Credentials />
         <AboutMe />
