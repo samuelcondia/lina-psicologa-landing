@@ -7,7 +7,7 @@ export function MediaSpotlight() {
     <section className="bg-marino/[0.04] py-14">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid gap-10 md:grid-cols-2">
-          <div>
+          <div className="min-w-0">
             <p className="text-sm font-semibold tracking-wide text-malva uppercase">
               Mi canal de YouTube
             </p>
@@ -39,7 +39,7 @@ export function MediaSpotlight() {
             </a>
           </div>
 
-          <div>
+          <div className="min-w-0">
             <p className="text-sm font-semibold tracking-wide text-malva uppercase">
               Libros
             </p>
