@@ -39,7 +39,7 @@ export function MediaSpotlight() {
             </a>
           </div>
 
-          <div className="min-w-0">
+          <div className="flex min-w-0 flex-col">
             <p className="text-sm font-semibold tracking-wide text-malva uppercase">
               Libros
             </p>
@@ -50,10 +50,10 @@ export function MediaSpotlight() {
               Libros digitales para seguir explorando el camino de sanar e
               integrar, a tu ritmo.
             </p>
-            <div className="mt-8 flex gap-8 overflow-x-auto px-2 pt-2 pb-4">
+            <div className="mt-5 flex flex-1 items-center justify-center gap-10 overflow-x-auto rounded-2xl bg-crema p-8 shadow-lg shadow-marino/10 ring-1 ring-marino/5">
               {libros.map((libro) => (
                 <div key={libro.titulo} className="group shrink-0">
-                  <div className="relative h-44 w-32 -rotate-3 transition-transform duration-300 group-hover:rotate-0 md:h-52 md:w-36">
+                  <div className="relative h-48 w-32 -rotate-3 transition-transform duration-300 group-hover:rotate-0 md:h-56 md:w-40">
                     <div className="absolute inset-0 translate-x-1.5 translate-y-1.5 rounded-md bg-marino-suave/50" />
                     <div className="absolute inset-0 translate-x-0.5 translate-y-0.5 rounded-md bg-marino-suave/70" />
                     <div className="relative flex h-full w-full flex-col justify-between rounded-md bg-gradient-to-br from-marino to-marino-suave p-3 text-crema shadow-xl ring-1 ring-black/10">
