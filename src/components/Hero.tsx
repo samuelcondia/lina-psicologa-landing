@@ -2,6 +2,7 @@ import { Flower2, Star } from "lucide-react";
 import { site, stats } from "@/lib/content";
 import { WhatsAppButton } from "./WhatsAppButton";
 import { Portrait } from "./Portrait";
+import { YoutubeIcon } from "./icons";
 
 const avatarStack = ["bg-malva/50", "bg-marino/30", "bg-marino/60"];
 
@@ -28,9 +29,26 @@ export function Hero() {
               virtual desde cualquier lugar, para quienes buscan una vida más
               consciente y equilibrada.
             </p>
-            <div className="mt-6">
-              <WhatsAppButton />
+            <div className="mt-6 flex flex-wrap items-center gap-3">
+              <WhatsAppButton>Agendar por WhatsApp</WhatsAppButton>
+              <a
+                href={site.doctoraliaUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-marino px-6 py-3 font-medium text-marino transition-colors hover:bg-marino hover:text-crema"
+              >
+                Agendar por Doctoralia
+              </a>
             </div>
+            <a
+              href={site.youtubeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-marino/70 transition-colors hover:text-marino"
+            >
+              <YoutubeIcon className="h-4 w-4" />
+              Mira mis contenidos en YouTube
+            </a>
             <dl className="mt-8 flex gap-10">
               {stats.map((stat) => (
                 <div key={stat.etiqueta}>

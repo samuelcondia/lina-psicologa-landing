@@ -14,8 +14,7 @@ export const site = {
     "Hola Lina, vi tu página y me gustaría agendar una sesión.",
   doctoraliaUrl:
     "https://www.doctoralia.co/lina-maria-sanchez-uribe/psicologo/pereira",
-  // TODO: pedirle a Lina el link de su canal de YouTube para enlazarlo.
-  youtubeUrl: "#",
+  youtubeUrl: "https://www.youtube.com/@LinaSanchezTerapiaHolistica",
 };
 
 export const stats = [
