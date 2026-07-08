@@ -15,7 +15,7 @@ export function Hero() {
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div>
             <p className="text-sm font-semibold tracking-wide text-malva uppercase">
-              Bienvenida a mi consulta
+              Te doy la bienvenida a mi consulta
             </p>
             <h1 className="mt-3 font-serif-title text-4xl leading-tight text-marino md:text-5xl">
               Una mente{" "}

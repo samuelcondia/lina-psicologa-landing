@@ -134,7 +134,7 @@ export const proceso = [
   {
     paso: "2",
     titulo: "Agendamos tu primera sesión",
-    descripcion: "Elegimos juntas el horario y la modalidad, presencial o virtual.",
+    descripcion: "Coordinamos el horario y la modalidad, presencial o virtual.",
   },
   {
     paso: "3",
