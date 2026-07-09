@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Raleway } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { WhatsAppFloatingButton } from "@/components/WhatsAppButton";
 
 const playfair = Playfair_Display({
   variable: "--font-title",
@@ -27,7 +30,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${playfair.variable} ${raleway.variable}`}>
-      <body className="min-h-screen antialiased">{children}</body>
+      <body className="min-h-screen antialiased">
+        <Header />
+        {children}
+        <Footer />
+        <WhatsAppFloatingButton />
+      </body>
     </html>
   );
 }

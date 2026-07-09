@@ -152,8 +152,10 @@ export const proceso = [
 ];
 
 export const navLinks = [
-  { href: "#sobre-mi", label: "Sobre mí" },
-  { href: "#servicios", label: "Servicios" },
-  { href: "#proceso", label: "Cómo funciona" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "/#sobre-mi", label: "Sobre mí" },
+  { href: "/#servicios", label: "Servicios" },
+  { href: "/#proceso", label: "Cómo funciona" },
+  { href: "/contenido", label: "Contenido" },
+  { href: "/experiencias", label: "Experiencias" },
+  { href: "/#contacto", label: "Contacto" },
 ];
