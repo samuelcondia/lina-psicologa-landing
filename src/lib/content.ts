@@ -137,7 +137,7 @@ export const proceso = [
   {
     paso: "1",
     titulo: "Escríbeme por WhatsApp",
-    descripcion: "Contame brevemente qué te trae a terapia.",
+    descripcion: "Cuéntame brevemente qué te trae a terapia.",
   },
   {
     paso: "2",

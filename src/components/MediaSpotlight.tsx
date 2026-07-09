@@ -16,7 +16,7 @@ export function MediaSpotlight() {
             </h2>
             <p className="mt-2 max-w-md text-sm text-marino/70">
               Contenido gratuito para acompañarte entre sesión y sesión.
-              Suscribite para no perderte los nuevos episodios y
+              Suscríbete para no perderte los nuevos episodios y
               meditaciones.
             </p>
             <div className="mt-5 aspect-video w-full overflow-hidden rounded-2xl shadow-lg shadow-marino/10">
@@ -44,7 +44,7 @@ export function MediaSpotlight() {
               Libros
             </p>
             <h2 className="mt-2 font-serif-title text-2xl text-marino md:text-3xl">
-              También podés adquirir mis libros
+              También puedes adquirir mis libros digitales aquí
             </h2>
             <p className="mt-2 max-w-md text-sm text-marino/70">
               Libros digitales para seguir explorando el camino de sanar e
