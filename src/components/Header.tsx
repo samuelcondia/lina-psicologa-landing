@@ -25,35 +25,23 @@ export function Header() {
           Lina María <br className="md:hidden" />
           Sánchez Uribe
         </a>
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-marino/80 transition-colors hover:text-marino"
+              className="text-sm font-medium whitespace-nowrap text-marino/80 transition-colors hover:text-marino"
             >
               {link.label}
             </a>
           ))}
         </nav>
         <div className="flex items-center gap-3">
-          <div className="hidden items-center gap-3 md:flex">
-            {socialLinks.map(({ href, label, Icon }) => (
-              <a
-                key={label}
-                href={href()}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={label}
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-marino/20 text-marino transition-colors hover:bg-marino hover:text-crema"
-              >
-                <Icon className="h-4 w-4" />
-              </a>
-            ))}
+          <div className="hidden md:block">
+            <WhatsAppButton className="px-4 py-2 text-sm">
+              Escríbeme
+            </WhatsAppButton>
           </div>
-          <WhatsAppButton className="px-4 py-2 text-sm">
-            Escríbeme
-          </WhatsAppButton>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
