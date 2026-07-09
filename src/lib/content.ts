@@ -15,8 +15,10 @@ export const site = {
   doctoraliaUrl:
     "https://www.doctoralia.co/lina-maria-sanchez-uribe/psicologo/pereira",
   youtubeUrl: "https://www.youtube.com/@LinaSanchezTerapiaHolistica",
-  // Video destacado en la franja de YouTube/libros (meditación "Sanar e Integrar" - chakra sacro).
-  videoDestacadoId: "xSJ3jx0PcPA",
+  // Meditación "Sanar e Integrar" - chakra sacro.
+  videoMeditacionId: "xSJ3jx0PcPA",
+  // Podcast "Echando el cuento" - Interpretación de sueños con Daniel Salvatierra (Cap. 5, T1).
+  videoPodcastId: "syHLHE3-ktg",
 };
 
 // Mockup de portada mientras Lina pasa el diseño/arte real y el link de compra.
