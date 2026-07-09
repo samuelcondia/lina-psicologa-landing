@@ -17,15 +17,15 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 bg-crema shadow-[0_1px_0_rgba(22,33,68,0.08)]">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
         <a
           href="/"
-          className="font-serif-title text-xl leading-tight text-marino"
+          className="shrink-0 font-serif-title text-xl leading-tight text-marino"
         >
-          Lina María <br className="md:hidden" />
+          Lina María <br className="xl:hidden" />
           Sánchez Uribe
         </a>
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden shrink-0 items-center gap-5 xl:flex">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -36,8 +36,23 @@ export function Header() {
             </a>
           ))}
         </nav>
-        <div className="flex items-center gap-3">
-          <div className="hidden md:block">
+        <div className="flex shrink-0 items-center gap-3">
+          <div className="hidden items-center gap-2 xl:flex">
+            {socialLinks.map(({ href, label, Icon }) => (
+              <a
+                key={label}
+                href={href()}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-marino/20 text-marino transition-colors hover:bg-marino hover:text-crema"
+              >
+                <Icon className="h-3.5 w-3.5" />
+              </a>
+            ))}
+          </div>
+          <div className="hidden h-6 w-px bg-marino/15 xl:block" />
+          <div className="hidden xl:block">
             <WhatsAppButton className="px-4 py-2 text-sm">
               Escríbeme
             </WhatsAppButton>
@@ -47,7 +62,7 @@ export function Header() {
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={open}
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-marino/20 text-marino md:hidden"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-marino/20 text-marino xl:hidden"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
@@ -55,7 +70,7 @@ export function Header() {
       </div>
 
       {open && (
-        <div className="border-t border-marino/10 bg-crema px-6 py-4 md:hidden">
+        <div className="border-t border-marino/10 bg-crema px-6 py-4 xl:hidden">
           <nav className="flex flex-col gap-3">
             {navLinks.map((link) => (
               <a
