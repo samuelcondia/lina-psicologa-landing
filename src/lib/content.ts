@@ -135,28 +135,9 @@ export const servicios = [
   },
 ];
 
-export const proceso = [
-  {
-    paso: "1",
-    titulo: "Escríbeme por WhatsApp",
-    descripcion: "Cuéntame brevemente qué te trae a terapia.",
-  },
-  {
-    paso: "2",
-    titulo: "Agendamos tu primera sesión",
-    descripcion: "Coordinamos el horario y la modalidad, presencial o virtual.",
-  },
-  {
-    paso: "3",
-    titulo: "Comenzamos tu proceso",
-    descripcion: "Iniciamos el acompañamiento a tu ritmo, con seguimiento cercano.",
-  },
-];
-
 export const navLinks = [
   { href: "/#sobre-mi", label: "Sobre mí" },
   { href: "/#servicios", label: "Servicios" },
-  { href: "/#proceso", label: "Cómo funciona" },
   { href: "/contenido", label: "Contenido" },
   { href: "/experiencias", label: "Experiencias" },
   { href: "/#contacto", label: "Contacto" },

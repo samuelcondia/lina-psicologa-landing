@@ -5,7 +5,6 @@ import { AboutMe } from "@/components/AboutMe";
 import { Reviews } from "@/components/Reviews";
 import { WhyChooseMe } from "@/components/WhyChooseMe";
 import { Services } from "@/components/Services";
-import { Process } from "@/components/Process";
 import { CrossLinks } from "@/components/CrossLinks";
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
       <Reviews />
       <WhyChooseMe />
       <Services />
-      <Process />
       <CrossLinks />
     </main>
   );
