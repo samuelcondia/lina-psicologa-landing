@@ -64,9 +64,9 @@ export function Hero() {
 
           <div className="relative mx-auto w-full max-w-sm">
             <Portrait
-              src="/images/lina-sobre-mi.jpg"
+              src="/images/lina-hero.jpg"
               alt={`${site.nombre}, ${site.titulo}`}
-              objectPosition="center 25%"
+              objectPosition="center 15%"
               className="aspect-[4/5] w-full"
               priority
             />

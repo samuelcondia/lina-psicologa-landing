@@ -6,9 +6,9 @@ export function AboutMe() {
     <section id="sobre-mi" className="mx-auto max-w-6xl px-6 py-20">
       <div className="grid items-center gap-12 md:grid-cols-2">
         <Portrait
-          src="/images/lina-hero.jpg"
+          src="/images/lina-sobre-mi.jpg"
           alt={site.nombre}
-          objectPosition="center 35%"
+          objectPosition="center 20%"
           className="mx-auto aspect-square w-full max-w-md md:order-1"
         />
         <div>
