@@ -8,7 +8,7 @@ export function AboutMe() {
         <Portrait
           src="/images/lina-hero.jpg"
           alt={site.nombre}
-          objectPosition="center 20%"
+          objectPosition="center 35%"
           className="mx-auto aspect-square w-full max-w-md md:order-1"
         />
         <div>

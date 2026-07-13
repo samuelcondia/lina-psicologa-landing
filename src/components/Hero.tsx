@@ -66,7 +66,7 @@ export function Hero() {
             <Portrait
               src="/images/lina-sobre-mi.jpg"
               alt={`${site.nombre}, ${site.titulo}`}
-              objectPosition="center 15%"
+              objectPosition="center 25%"
               className="aspect-[4/5] w-full"
               priority
             />
