@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { GalleryTile } from "@/components/GalleryTile";
+import Image from "next/image";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
@@ -8,7 +8,12 @@ export const metadata: Metadata = {
     "Talleres, retiros y sesiones grupales con Lina María Sánchez Uribe, psicóloga holística.",
 };
 
-const totalFotos = 8;
+const fotos = [
+  { src: "/images/experiencias/experiencia-1.jpg", alt: "Encuentro grupal junto a la piscina" },
+  { src: "/images/experiencias/experiencia-2.jpg", alt: "Círculo de conversación en el taller" },
+  { src: "/images/experiencias/experiencia-3.jpg", alt: "Encendiendo una vela durante la ceremonia" },
+  { src: "/images/experiencias/experiencia-4.jpg", alt: "Ceremonia de velas al aire libre" },
+];
 
 export default function ExperienciasPage() {
   return (
@@ -22,15 +27,26 @@ export default function ExperienciasPage() {
             Un vistazo a los espacios que compartimos
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-marino/70">
-            Talleres, retiros y sesiones grupales, fotos próximamente.
+            Talleres, retiros y sesiones grupales para sanar en comunidad.
           </p>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-14">
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-          {Array.from({ length: totalFotos }).map((_, i) => (
-            <GalleryTile key={i} />
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          {fotos.map((foto) => (
+            <div
+              key={foto.src}
+              className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-lg shadow-marino/10"
+            >
+              <Image
+                src={foto.src}
+                alt={foto.alt}
+                fill
+                sizes="(min-width: 640px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
           ))}
         </div>
       </section>
