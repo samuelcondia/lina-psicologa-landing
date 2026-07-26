@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { eventos } from "@/lib/content";
+import { Carousel } from "@/components/Carousel";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
@@ -7,13 +8,6 @@ export const metadata: Metadata = {
   description:
     "Talleres, retiros y sesiones grupales con Lina María Sánchez Uribe, psicóloga holística.",
 };
-
-const fotos = [
-  { src: "/images/experiencias/experiencia-1.jpg", alt: "Encuentro grupal junto a la piscina" },
-  { src: "/images/experiencias/experiencia-2.jpg", alt: "Círculo de conversación en el taller" },
-  { src: "/images/experiencias/experiencia-3.jpg", alt: "Encendiendo una vela durante la ceremonia" },
-  { src: "/images/experiencias/experiencia-4.jpg", alt: "Ceremonia de velas al aire libre" },
-];
 
 export default function ExperienciasPage() {
   return (
@@ -33,19 +27,19 @@ export default function ExperienciasPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-14">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {fotos.map((foto) => (
+        <div className="space-y-16">
+          {eventos.map((evento) => (
             <div
-              key={foto.src}
-              className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-lg shadow-marino/10"
+              key={evento.titulo}
+              className="grid items-center gap-10 md:grid-cols-2"
             >
-              <Image
-                src={foto.src}
-                alt={foto.alt}
-                fill
-                sizes="(min-width: 640px) 50vw, 100vw"
-                className="object-cover"
-              />
+              <Carousel fotos={evento.fotos} />
+              <div>
+                <h2 className="font-serif-title text-2xl text-marino md:text-3xl">
+                  {evento.titulo}
+                </h2>
+                <p className="mt-3 text-marino/70">{evento.descripcion}</p>
+              </div>
             </div>
           ))}
         </div>

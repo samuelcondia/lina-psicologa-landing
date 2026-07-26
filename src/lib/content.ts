@@ -27,6 +27,34 @@ export const libros = [
   { titulo: "Mujer en deconstrucción" },
 ];
 
+// TODO: reemplazar título y descripción cuando Lina los confirme.
+// Cada evento nuevo se agrega como un elemento más de este arreglo.
+export const eventos = [
+  {
+    titulo: "Primer Taller grupal presencial",
+    descripcion:
+      "Un espacio grupal para conectar contigo y con quienes te rodean, a través de meditación, ritual y conversación consciente.",
+    fotos: [
+      {
+        src: "/images/experiencias/experiencia-1.jpg",
+        alt: "Encuentro grupal junto a la piscina",
+      },
+      {
+        src: "/images/experiencias/experiencia-2.jpg",
+        alt: "Círculo de conversación en el taller",
+      },
+      {
+        src: "/images/experiencias/experiencia-3.jpg",
+        alt: "Encendiendo una vela durante la ceremonia",
+      },
+      {
+        src: "/images/experiencias/experiencia-4.jpg",
+        alt: "Ceremonia de velas al aire libre",
+      },
+    ],
+  },
+];
+
 export const stats = [
   { valor: "20+", etiqueta: "Años de experiencia" },
   { valor: "78", etiqueta: "Reseñas verificadas" },
