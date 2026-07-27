@@ -35,7 +35,10 @@ export default function ExperienciasPage() {
             >
               <Carousel fotos={evento.fotos} />
               <div>
-                <h2 className="font-serif-title text-2xl text-marino md:text-3xl">
+                <p className="text-sm font-semibold tracking-wide text-malva uppercase">
+                  {evento.fecha}
+                </p>
+                <h2 className="mt-2 font-serif-title text-2xl text-marino md:text-3xl">
                   {evento.titulo}
                 </h2>
                 <p className="mt-3 text-marino/70">{evento.descripcion}</p>

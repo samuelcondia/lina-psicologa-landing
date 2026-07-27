@@ -27,13 +27,13 @@ export const libros = [
   { titulo: "Mujer en deconstrucción" },
 ];
 
-// TODO: reemplazar título y descripción cuando Lina los confirme.
 // Cada evento nuevo se agrega como un elemento más de este arreglo.
 export const eventos = [
   {
-    titulo: "Primer Taller grupal presencial",
+    titulo: "Taller vivencial de Constelaciones Familiares",
+    fecha: "5 y 6 de julio · Pereira",
     descripcion:
-      "Un espacio grupal para conectar contigo y con quienes te rodean, a través de meditación, ritual y conversación consciente.",
+      "Facilitado junto a Liliana Arbeláez N., un espacio de consciencia y transformación para sanar vínculos esenciales con papá, con mamá y con la abundancia.",
     fotos: [
       {
         src: "/images/experiencias/experiencia-1.jpg",
