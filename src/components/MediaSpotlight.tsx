@@ -1,6 +1,70 @@
+import Image from "next/image";
 import { BookOpen } from "lucide-react";
 import { libros, site } from "@/lib/content";
 import { YoutubeIcon } from "./icons";
+
+const marcoLibro =
+  "relative h-44 w-28 -rotate-3 transition-transform duration-300 group-hover:rotate-0 md:h-52 md:w-36";
+
+function PilaDePaginas() {
+  return (
+    <>
+      <div className="absolute inset-0 translate-x-1.5 translate-y-1.5 rounded-md bg-marino-suave/50" />
+      <div className="absolute inset-0 translate-x-0.5 translate-y-0.5 rounded-md bg-marino-suave/70" />
+    </>
+  );
+}
+
+function LibroCard({ libro }: { libro: (typeof libros)[number] }) {
+  if (libro.url && libro.portada) {
+    return (
+      <a
+        href={libro.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Comprar ${libro.titulo} en Amazon`}
+        className="group shrink-0"
+      >
+        <div className={marcoLibro}>
+          <PilaDePaginas />
+          <div className="relative h-full w-full overflow-hidden rounded-md shadow-xl ring-1 ring-black/10">
+            <Image
+              src={libro.portada}
+              alt={`Portada de ${libro.titulo}`}
+              fill
+              sizes="(min-width: 768px) 144px, 112px"
+              className="object-cover"
+            />
+          </div>
+        </div>
+        <p className="mt-3 text-center text-xs font-semibold text-marino underline underline-offset-4 transition-colors group-hover:text-malva">
+          Comprar en Amazon
+        </p>
+      </a>
+    );
+  }
+
+  return (
+    <div className="group shrink-0">
+      <div className={marcoLibro}>
+        <PilaDePaginas />
+        <div className="relative flex h-full w-full flex-col justify-between rounded-md bg-gradient-to-br from-marino to-marino-suave p-3 text-crema shadow-xl ring-1 ring-black/10">
+          <BookOpen className="h-5 w-5 text-malva" strokeWidth={1.5} />
+          <div>
+            <p className="font-serif-title text-sm leading-tight">
+              {libro.titulo}
+            </p>
+            <div className="mt-2 h-px w-8 bg-malva/60" />
+            <p className="mt-2 text-[9px] tracking-wide text-crema/50 uppercase">
+              Lina Sánchez Uribe
+            </p>
+          </div>
+        </div>
+      </div>
+      <p className="mt-3 text-center text-xs text-marino/50">Próximamente</p>
+    </div>
+  );
+}
 
 function VideoBlock({
   eyebrow,
@@ -76,30 +140,7 @@ export function MediaSpotlight() {
           </p>
           <div className="mt-5 flex flex-wrap items-center gap-8">
             {libros.map((libro) => (
-              <div key={libro.titulo} className="group shrink-0">
-                <div className="relative h-44 w-28 -rotate-3 transition-transform duration-300 group-hover:rotate-0 md:h-52 md:w-36">
-                  <div className="absolute inset-0 translate-x-1.5 translate-y-1.5 rounded-md bg-marino-suave/50" />
-                  <div className="absolute inset-0 translate-x-0.5 translate-y-0.5 rounded-md bg-marino-suave/70" />
-                  <div className="relative flex h-full w-full flex-col justify-between rounded-md bg-gradient-to-br from-marino to-marino-suave p-3 text-crema shadow-xl ring-1 ring-black/10">
-                    <BookOpen
-                      className="h-5 w-5 text-malva"
-                      strokeWidth={1.5}
-                    />
-                    <div>
-                      <p className="font-serif-title text-sm leading-tight">
-                        {libro.titulo}
-                      </p>
-                      <div className="mt-2 h-px w-8 bg-malva/60" />
-                      <p className="mt-2 text-[9px] tracking-wide text-crema/50 uppercase">
-                        Lina Sánchez Uribe
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <p className="mt-3 text-center text-xs text-marino/50">
-                  Próximamente
-                </p>
-              </div>
+              <LibroCard key={libro.titulo} libro={libro} />
             ))}
           </div>
         </div>

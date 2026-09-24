@@ -21,10 +21,15 @@ export const site = {
   videoPodcastId: "syHLHE3-ktg",
 };
 
-// Mockup de portada mientras Lina pasa el diseño/arte real y el link de compra.
+// Libros con portada y `url` de compra están publicados; los que solo tienen
+// título se muestran como mockup "Próximamente" hasta que Lina pase arte y link.
 export const libros = [
+  {
+    titulo: "Mujer en deconstrucción",
+    portada: "/images/libro-mujer-en-deconstruccion.jpg",
+    url: "https://www.amazon.com/-/es/dp/B0HK8R9JFF",
+  },
   { titulo: "Manual de Soberanía Energética" },
-  { titulo: "Mujer en deconstrucción" },
 ];
 
 // Cada evento nuevo se agrega como un elemento más de este arreglo.
