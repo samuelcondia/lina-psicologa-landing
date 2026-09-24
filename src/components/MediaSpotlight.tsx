@@ -18,29 +18,34 @@ function PilaDePaginas() {
 function LibroCard({ libro }: { libro: (typeof libros)[number] }) {
   if (libro.url && libro.portada) {
     return (
-      <a
-        href={libro.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={`Comprar ${libro.titulo} en Amazon`}
-        className="group shrink-0"
-      >
-        <div className={marcoLibro}>
-          <PilaDePaginas />
-          <div className="relative h-full w-full overflow-hidden rounded-md shadow-xl ring-1 ring-black/10">
-            <Image
-              src={libro.portada}
-              alt={`Portada de ${libro.titulo}`}
-              fill
-              sizes="(min-width: 768px) 144px, 112px"
-              className="object-cover"
-            />
+      <div className="w-full max-w-72 shrink-0">
+        <a
+          href={libro.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Comprar ${libro.titulo} en Amazon`}
+          className="group block w-fit"
+        >
+          <div className={marcoLibro}>
+            <PilaDePaginas />
+            <div className="relative h-full w-full overflow-hidden rounded-md shadow-xl ring-1 ring-black/10">
+              <Image
+                src={libro.portada}
+                alt={`Portada de ${libro.titulo}`}
+                fill
+                sizes="(min-width: 768px) 144px, 112px"
+                className="object-cover"
+              />
+            </div>
           </div>
-        </div>
-        <p className="mt-3 text-center text-xs font-semibold text-marino underline underline-offset-4 transition-colors group-hover:text-malva">
-          Comprar en Amazon
-        </p>
-      </a>
+          <p className="mt-3 text-center text-xs font-semibold text-marino underline underline-offset-4 transition-colors group-hover:text-malva">
+            Comprar en Amazon
+          </p>
+        </a>
+        {libro.descripcion && (
+          <p className="mt-3 text-sm text-marino/70">{libro.descripcion}</p>
+        )}
+      </div>
     );
   }
 
@@ -138,7 +143,7 @@ export function MediaSpotlight() {
             Libros digitales para seguir explorando el camino de sanar e
             integrar, a tu ritmo.
           </p>
-          <div className="mt-5 flex flex-wrap items-center gap-8">
+          <div className="mt-5 flex flex-wrap items-start gap-8">
             {libros.map((libro) => (
               <LibroCard key={libro.titulo} libro={libro} />
             ))}

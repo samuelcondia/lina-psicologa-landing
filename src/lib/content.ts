@@ -28,6 +28,9 @@ export const libros = [
     titulo: "Mujer en deconstrucción",
     portada: "/images/libro-mujer-en-deconstruccion.jpg",
     url: "https://www.amazon.com/-/es/dp/B0HK8R9JFF",
+    // Resumen de la contraportada del libro.
+    descripcion:
+      "Una guía clara y cercana para entender los cambios del cuerpo en la perimenopausia: sueño, ánimo, memoria y piel. Incluye herramientas de nutrición, movimiento y regulación del sistema nervioso, para vivir esta etapa como una oportunidad de reconstruirte desde un lugar más auténtico.",
   },
   { titulo: "Manual de Soberanía Energética" },
 ];
